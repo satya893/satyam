@@ -1,1 +1,1 @@
-# satyam
+# satyam iam ready to use git  
