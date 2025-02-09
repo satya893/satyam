@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Advanced Task Manager</h1>
+
+    <!-- Task Input Section -->
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <select id="taskCategory">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Health">Health</option>
+        <option value="Other">Other</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <!-- Task Filters -->
+    <div class="filters">
+      <button onclick="filterTasks('all')">All Tasks</button>
+      <button onclick="filterTasks('completed')">Completed Tasks</button>
+      <button onclick="filterTasks('pending')">Pending Tasks</button>
+    </div>
+
+    <!-- Task List Section -->
+    <div class="task-list">
+      <h2>Tasks</h2>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Task Report Section -->
+    <div class="task-report">
+      <h2>Task Report</h2>
+      <p>Total Tasks: <span id="totalTasks">0</span></p>
+      <p>Completed Tasks: <span id="completedTasks">0</span></p>
+      <p>Pending Tasks: <span id="pendingTasks">0</span></p>
+      <button onclick="exportReport()">Export Report as JSON</button>
+    </div>
+  </div>
+  
+
+  <script src="1.js"></script>
+</body>
+</html>
