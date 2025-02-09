@@ -171,18 +171,38 @@ h2 {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-@media screen  and (max-width: 768px) {
-  .task-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
   }
-  
+  .task-input input, .task-input select {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .task-input button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .filters button {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .task-list li {
+    padding: 12px;
+  }
+
+  .task-list button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .task-report button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
 }
