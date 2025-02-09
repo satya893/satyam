@@ -172,37 +172,53 @@ h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 /* Responsive Styles */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
-    padding: 20px;
-  }
-  .task-input input, .task-input select {
-    padding: 10px;
-    font-size: 0.9rem;
+  h1 {
+    font-size: 1.8rem;
   }
 
-  .task-input button {
-    padding: 10px 16px;
-    font-size: 0.9rem;
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .task-input {
+    flex-direction: column;
+  }
+
+  .task-input input, .task-input select {
+    width: 100%;
   }
 
   .filters button {
-    padding: 8px 16px;
-    font-size: 0.8rem;
+    flex: 1 1 100%; /* Full width for buttons on small screens */
   }
 
   .task-list li {
-    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .task-list button {
-    padding: 6px 10px;
-    font-size: 0.8rem;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .task-input button {
+    width: 100%;
   }
 
   .task-report button {
-    padding: 10px 16px;
-    font-size: 0.9rem;
+    width: 100%;
   }
 }
